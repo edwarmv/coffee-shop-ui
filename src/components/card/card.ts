@@ -31,9 +31,9 @@ export class CsCard extends LitElement {
 
       <div class="price">
         <span>${this.currency}${this.price}</span>
-        <cs-button variant="fab">
+        <cs-filled-button size="sm">
           <cs-icon name="plus"></cs-icon>
-        </cs-button>
+        </cs-filled-button>
       </div>
     `;
   }

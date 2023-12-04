@@ -12,7 +12,19 @@ type Story = StoryObj;
 
 export const Default: Story = {
   args: {
-    label: "Button",
+    rating: "4.5",
+    name: "Bursting Blueberry",
+    price: "249",
+    currency: "₹",
   },
-  render: (args) => html` <cs-card> </cs-card> `,
+  render: (args) => html`
+    <cs-card
+      rating=${args.rating}
+      name=${args.name}
+      price=${args.price}
+      currency=${args.currency}
+    >
+      <img src="/coffee.png" />
+    </cs-card>
+  `,
 };
